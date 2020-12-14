@@ -19,7 +19,7 @@
   <dependencies>
     <dependency>
 	    <groupId>cc.eguid.cv.corelib</groupId>
-		<artifactId>videoRecorder</artifactId>
+			<artifactId>videoRecorder</artifactId>
     </dependency>
   </dependencies>
   

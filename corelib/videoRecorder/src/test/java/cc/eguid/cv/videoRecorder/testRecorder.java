@@ -24,7 +24,7 @@ import org.bytedeco.javacv.FrameRecorder.Exception;
  * @author eguid
  *
  */
-public class testRecorder {
+public class TestRecorder {
 
 	static {
 		avcodec_register_all();
@@ -101,7 +101,7 @@ public class testRecorder {
 	 * @return
 	 * @throws Exception
 	 */
-	public testRecorder start(String filename, String format, int imageWidth, int imageHeight, int frameRate, int gopSize)
+	public TestRecorder start(String filename, String format, int imageWidth, int imageHeight, int frameRate, int gopSize)
 			throws Exception {
 		this.format = format;
 		this.imageWidth = imageWidth;
@@ -585,7 +585,7 @@ public class testRecorder {
 	 * @param url
 	 * @return
 	 */
-	public testRecorder from(String url) {
+	public TestRecorder from(String url) {
 		in_fc = openInput(url);
 		if (in_fc != null) {
 			// 解决rtmp检索时间过长问题
@@ -649,7 +649,7 @@ public class testRecorder {
 		throw new StreamInfoNotFoundException("Didn't retrieve stream information");
 	}
 
-	public testRecorder grabtoPush() throws Exception {
+	public TestRecorder grabtoPush() throws Exception {
 		AVPacket pkt = new AVPacket();
 	
 		for (int err_index = 0; av_read_frame(in_fc, pkt) >= 0;) {
@@ -698,8 +698,8 @@ public class testRecorder {
 	}
 
 	public static void main(String[] args) throws Exception {
-		testRecorder recorder = new testRecorder().from("rtmp://media3.sinovision.net:1935/live/livestream")
-				.start("rtmp://106.14.182.20:1935/rtmp/eguid", "flv", 800, 600, 25, 2).grabtoPush();
+		TestRecorder recorder = new TestRecorder().from("rtmp://58.200.131.2:1935/livetv/cctv1")
+				.start("rtmp://58.200.131.2:1935/livetv/cctv1", "flv", 800, 600, 25, 2).grabtoPush();
 
 	}
 }

@@ -28,7 +28,7 @@
 		<gcu.product>${project.name}</gcu.product>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ssZ</maven.build.timestamp.format>
 		<!-- maven编译插件 -->
-		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.testTarget>1.8</maven.compiler.testTarget>
@@ -142,18 +142,13 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>${maven-compiler-plugin.version}</version>
+					<version>3.8.1</version>
 					<configuration>
-						<source>${maven.compiler.source}</source>
-						<target>${maven.compiler.target}</target>
-						<compilerVersion>1.8</compilerVersion>
-						<verbose>true</verbose>
-						<!-- 解决中文乱码无法编译问题 -->
-						<encoding>UTF8</encoding>
-						<fork>true</fork>
-						<executable>${JAVA8_HOME}/bin/javac</executable>
+						<source>1.8</source>
+						<target>1.8</target>
 					</configuration>
 				</plugin>
+
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>

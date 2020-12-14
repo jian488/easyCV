@@ -5,11 +5,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>cc.eguid.cv.easyCV</groupId>
+		<groupId>cc.eguid.cv.corelib</groupId>
 		<artifactId>corelib</artifactId>
 		<version>1.0</version>
 	</parent>
-	<groupId>cc.eguid.cv.easyCV.corelib</groupId>
+	<groupId>cc.eguid.cv.corelib</groupId>
 	<artifactId>videoRecorder</artifactId>
 	<version>2019.3.25</version>
 	<name>videoRecorder</name>
@@ -37,7 +37,7 @@
 		<dependency>
 			<groupId>org.bytedeco</groupId>
 			<artifactId>javacv-platform</artifactId>
-			<exclusions>
+			<!--<exclusions>
 				<exclusion>
 					<groupId>org.bytedeco.javacpp-presets</groupId>
 	    			<artifactId>opencv</artifactId>
@@ -126,8 +126,10 @@
 					<groupId>org.bytedeco.javacpp-presets</groupId>
 					<artifactId>opencv-platform</artifactId>
 				</exclusion>
-			</exclusions>
+			</exclusions>-->
 		</dependency>
+
+
 	</dependencies>
 	
 </project>

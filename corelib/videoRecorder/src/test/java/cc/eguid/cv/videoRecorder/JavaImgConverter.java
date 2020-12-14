@@ -32,20 +32,20 @@ public class JavaImgConverter {
 	
 
 	public static void main(String[] args) {
-//		for(int i=0;i<3;i++) {
+		for(int i=0;i<3;i++) {
 			demoview();
-//		}
-//		int width=800,height=600;
-//		int[] allrgb=new int[width*height];
-//		int count=0;
-//		for (int i = 0; i < width; i++) {
-//			for (int j = 0; j < height; j++) {
-//				int rgb = ImagePixelAlgorithm.getRGB((int) (Math.random() * 255),(int) (Math.random() * 255),(int) (Math.random() * 255));
-//				allrgb[count++]=rgb;
-//			}
-//		}
-//		System.err.println(count);
-//		viewRGB(width,height,allrgb);
+		}
+		int width=800,height=600;
+		int[] allrgb=new int[width*height];
+		int count=0;
+		for (int i = 0; i < width; i++) {
+			for (int j = 0; j < height; j++) {
+				int rgb = ImagePixelAlgorithm.getRGB((int) (Math.random() * 255),(int) (Math.random() * 255),(int) (Math.random() * 255));
+				allrgb[count++]=rgb;
+			}
+		}
+		System.err.println(count);
+		viewRGB(allrgb,width,height);
 	}
 	
 	public static int getRGB(int[] rgbarr) {
