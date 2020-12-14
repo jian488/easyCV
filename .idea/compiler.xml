@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="videoshot-postgre" />
+        <module name="videoRecorder" />
+        <module name="videorecorder-web" />
+        <module name="videoimageshot" />
+        <module name="videoimageshot-web" />
+        <module name="videorecorder-postgre" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

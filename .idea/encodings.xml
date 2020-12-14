@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/corelib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/corelib/videoRecorder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/corelib/videoimageshot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/videoimageshot-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/videorecorder-postgre" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/videorecorder-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples/videoshot-postgre" charset="UTF-8" />
+  </component>
+</project>
